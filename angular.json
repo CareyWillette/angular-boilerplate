@@ -7,12 +7,14 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "prefix": "bext",
+          "spec": false
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "bext",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
