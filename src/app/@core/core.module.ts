@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { throwIfAlreadyLoaded } from '@app/@core/guards/module-import.guard';
 import { SERVICES } from '@app/@core/services';
 
+export const CORE_PROVIDERS = [
+  ...SERVICES
+]
+
 @NgModule({
   imports: [
     CommonModule
