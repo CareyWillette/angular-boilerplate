@@ -13,8 +13,8 @@ import { ThemeModule } from './@theme/theme.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CoreModule.forRoot(),
-    ThemeModule
+    ThemeModule.forRoot(),
+    CoreModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
