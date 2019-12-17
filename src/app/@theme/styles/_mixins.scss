@@ -1,0 +1,62 @@
+$gutters: 5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 55px, 60px, 65px, 70px, 75px, 80px, 85px, 90px, 95px, 100px;
+
+@each $size in $gutters {
+  .m-#{$size} {
+    margin-top: $size;
+    margin-right: $size;
+    margin-bottom: $size;
+    margin-left: $size;
+  }
+  .p-#{$size} {
+    margin-top: $size;
+    margin-right: $size;
+    margin-bottom: $size;
+    margin-left: $size;
+  }
+
+  .m-t-#{$size} {
+    margin-top: $size;
+  }
+  .p-t-#{$size} {
+    margin-top: $size;
+  }
+
+  .m-r-#{$size} {
+    margin-right: $size;
+  }
+  .p-r-#{$size} {
+    margin-right: $size;
+  }
+
+  .m-b-#{$size} {
+    margin-bottom: $size;
+  }
+  .p-b-#{$size} {
+    margin-bottom: $size;
+  }
+
+  .m-l-#{$size} {
+    margin-left: $size;
+  }
+  .p-l-#{$size} {
+    margin-left: $size;
+  }
+
+  .m-t-b-#{$size} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+  .p-t-b-#{$size} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+
+  .m-r-l-#{$size} {
+    margin-right: $size;
+    margin-left: $size;
+  }
+  .p-r-l-#{$size} {
+    margin-right: $size;
+    margin-left: $size;
+  }
+}
