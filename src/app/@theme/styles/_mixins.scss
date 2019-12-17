@@ -1,61 +1,69 @@
 $gutters: 5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 55px, 60px, 65px, 70px, 75px, 80px, 85px, 90px, 95px, 100px;
 
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
 @each $size in $gutters {
-  .m-#{$size} {
+  .m-#{strip-unit($size)} {
     margin-top: $size;
     margin-right: $size;
     margin-bottom: $size;
     margin-left: $size;
   }
-  .p-#{$size} {
+  .p-#{strip-unit($size)} {
     margin-top: $size;
     margin-right: $size;
     margin-bottom: $size;
     margin-left: $size;
   }
 
-  .m-t-#{$size} {
+  .m-t-#{strip-unit($size)} {
     margin-top: $size;
   }
-  .p-t-#{$size} {
+  .p-t-#{strip-unit($size)} {
     margin-top: $size;
   }
 
-  .m-r-#{$size} {
+  .m-r-#{strip-unit($size)} {
     margin-right: $size;
   }
-  .p-r-#{$size} {
+  .p-r-#{strip-unit($size)} {
     margin-right: $size;
   }
 
-  .m-b-#{$size} {
+  .m-b-#{strip-unit($size)} {
     margin-bottom: $size;
   }
-  .p-b-#{$size} {
+  .p-b-#{strip-unit($size)} {
     margin-bottom: $size;
   }
 
-  .m-l-#{$size} {
+  .m-l-#{strip-unit($size)} {
     margin-left: $size;
   }
-  .p-l-#{$size} {
+  .p-l-#{strip-unit($size)} {
     margin-left: $size;
   }
 
-  .m-t-b-#{$size} {
+  .m-t-b-#{strip-unit($size)} {
     margin-top: $size;
     margin-bottom: $size;
   }
-  .p-t-b-#{$size} {
+  .p-t-b-#{strip-unit($size)} {
     margin-top: $size;
     margin-bottom: $size;
   }
 
-  .m-r-l-#{$size} {
+  .m-r-l-#{strip-unit($size)} {
     margin-right: $size;
     margin-left: $size;
   }
-  .p-r-l-#{$size} {
+  .p-r-l-#{strip-unit($size)} {
     margin-right: $size;
     margin-left: $size;
   }
