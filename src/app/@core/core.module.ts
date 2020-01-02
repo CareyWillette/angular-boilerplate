@@ -1,7 +1,7 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { throwIfAlreadyLoaded } from '@app/@core/module-import.guard';
-import { SERVICES } from '@app/@core/services';
+import { throwIfAlreadyLoaded } from '@bp-app/@core/module-import.guard';
+import { SERVICES } from '@bp-app/@core/services';
 
 export const CORE_PROVIDERS = [
   ...SERVICES

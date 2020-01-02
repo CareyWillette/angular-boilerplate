@@ -19,8 +19,11 @@
       "dom"
     ],
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@env/*": ["src/environments/*"]
+      "@bp-app/*": ["src/app/*"],
+      "@bp-env/*": ["src/environments/*"],
+      "@bp-core/*": ["src/app/@core/*"],
+      "@bp-theme/*": ["src/app/@theme/*"],
+      "@bp-assets/*": ["src/assets/*"]
     },
   }
 }
